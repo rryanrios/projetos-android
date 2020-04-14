@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idade" />
+
+        <EditText
+            android:id="@+id/txt_idade"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Marque os sintomas que esta sentindo!"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/febre_alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Febre Alta" />
+
+    <CheckBox
+        android:id="@+id/tosse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tosse" />
+
+    <CheckBox
+        android:id="@+id/dores_musculares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dores Musculares" />
+
+    <CheckBox
+        android:id="@+id/falta_de_ar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Falta de Ar" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secrecao_garganta"
+        android:text="Secreção na Garganta" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:onClick="button_confirm"
+        android:text="Verificar" />
+
+</LinearLayout>
